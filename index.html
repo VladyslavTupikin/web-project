@@ -14,13 +14,15 @@
   <body>
     <div id="main-page">
       <div id="main-top-menu">
-        <ul>
-          <li>Home</li>
-          <li>Product</li>
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
       <div id="main-top-figma-title">
         <img src="img/figma-title.png" alt="Figma title on top of page" />
@@ -185,29 +187,31 @@
       <div id="first-partners-raw">
         <table border="1">
           <tr>
+            <th>Client name</th>
+            <th>Client name</th>
+            <th>Client name</th>
+            <th>Client name</th>
+          </tr>
+          <tr>
             <td>
-              Client name
               <img
                 src="img/partners-logo/google.png"
                 alt="Google parnters logo"
               />
             </td>
             <td>
-              Client name
               <img
                 src="img/partners-logo/amazon.png"
                 alt="Amazon parnters logo"
               />
             </td>
             <td>
-              Client name
               <img
                 src="img/partners-logo/microsoft.png"
                 alt="Microsoft parnters logo"
               />
             </td>
             <td>
-              Client name
               <img src="img/partners-logo/uber.png" alt="Uber parnters logo" />
             </td>
           </tr>
@@ -216,26 +220,28 @@
       <div id="second-partners-raw">
         <table border="1">
           <tr>
+            <th>Client name</th>
+            <th>Client name</th>
+            <th>Client name</th>
+            <th>Client name</th>
+          </tr>
+          <tr>
             <td>
-              Client name
               <img
                 src="img/partners-logo/dropbox.png"
                 alt="Dropbox parnters logo"
               />
             </td>
             <td>
-              Client name
               <img
                 src="img/partners-logo/google.png"
                 alt="Google parnters logo"
               />
             </td>
             <td>
-              Client name
               <img src="img/partners-logo/uber.png" alt="Uber parnters logo" />
             </td>
             <td>
-              Client name
               <img
                 src="img/partners-logo/amazon.png"
                 alt="Amazon parnters logo"
@@ -381,9 +387,15 @@
       </div>
       <div id="conact-us-form">
         <form action="https://example.com">
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Your Email" />
-          <input type="text" placeholder="Your Message" />
+          <input type="text" id="name" placeholder="Your Name" />
+          <input type="text" id="email" placeholder="Your Email" />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Your text"
+          ></textarea>
           <button>
             <img
               src="img/buttons/subscribe.png"
@@ -395,22 +407,28 @@
       <div id="contact-us-table">
         <table border="1">
           <tr>
+            <th>
+              <address>
+                6386 Spring St undefined Anchorage, Georgia 12473 United States
+              </address>
+            </th>
+            <th>(843) 555-0130</th>
+            <th>willie.jennings@example.com</th>
+          </tr>
+          <tr>
             <td>
-              6386 Spring St undefined Anchorage, Georgia 12473 United States
               <img
                 src="img/icons/map-blue.svg"
                 alt="Contact us map icon blue"
               />
             </td>
             <td>
-              (843) 555-0130
               <img
                 src="img/icons/phone-android-blue.svg"
                 alt="Contact us phone icon blue"
               />
             </td>
             <td>
-              willie.jennings@example.com
               <img
                 src="img/icons/mail-blue.svg"
                 alt="Contact us mail icon blue"
@@ -418,6 +436,9 @@
             </td>
           </tr>
         </table>
+      </div>
+      <div id="contact-us-map">
+        <a href="#"><img src="img/map.png" alt="Map for contact us page" /></a>
       </div>
       <div id="conact-us-socials">
         <ul>
@@ -452,13 +473,15 @@
     <footer>
       <div id="footer-pages">
         <h4>Pages</h4>
-        <ul>
-          <li>Home</li>
-          <li>Product</li>
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
       <div id="footer-tomothy">
         <h4>Tomothy</h4>
@@ -482,7 +505,7 @@
       </div>
       <div id="footer-location">
         <img src="img/icons/map.svg" alt="Map location icon in footer" />
-        <h5>7480 Mockingbird Hill undefined</h5>
+        <address>7480 Mockingbird Hill undefined</address>
       </div>
       <div id="footer-phone">
         <img
