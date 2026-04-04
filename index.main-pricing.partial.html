@@ -1,0 +1,28 @@
+<div class="pricing">
+  <div class="pricing__intro">
+    <h2 class="pricing__intro-title">Pricing</h2>
+    <p class="pricing__intro-text">
+      Most calendars are designed for items. Slate is designed for freelancers
+    </p>
+  </div>
+
+  <div class="pricing__list">
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="pricing.card-free.partial.html"
+    ></div>
+
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="pricing.card-standard.partial.html"
+    ></div>
+
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="pricing.card-business.partial.html"
+    ></div>
+  </div>
+</div>

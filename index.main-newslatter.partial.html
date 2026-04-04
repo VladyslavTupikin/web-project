@@ -1,27 +1,29 @@
-<section>
-  <div>
-    <div>
-      <img
-        src="img/newslatter.png"
-        alt="Newslatter picture on the newslatter page"
-      />
-    </div>
-    <div>
-      <h3>At your fingertips</h3>
-      <h4>Lightning fast prototyping</h4>
-    </div>
-    <div>
-      <form action="https://example.com">
-        <h4>Subscribe to our Newslatter</h4>
-        <h5>Available exclusively on Figmaland</h5>
-        <input type="text" placeholder="Your Email" />
-        <button>
-          <img
-            src="img/buttons/subscribe.png"
-            alt="Subscribe button for email form"
-          />
-        </button>
-      </form>
-    </div>
+<div class="newslatter">
+  <div class="newslatter__picture">
+    <img
+      class="newslatter__picture-img"
+      src="img/newslatter.png"
+      alt="Newslatter picture on the newslatter page"
+    />
   </div>
-</section>
+
+  <div class="newslatter__intro">
+    <p class="newslatter__intro-text">At your fingertips</p>
+    <h2 class="newslatter__intro-title">Lightning fast prototyping</h2>
+  </div>
+
+  <div class="newslatter__container">
+    <form class="newslatter__form" action="https://example.com">
+      <h3 class="newslatter__form-title">Subscribe to our Newslatter</h3>
+      <p class="newslatter__form-text">Available exclusively on Figmaland</p>
+
+      <input
+        class="newslatter__form-input"
+        type="text"
+        placeholder="Your Email"
+        required
+      />
+      <button class="newslatter__form-button">Subscribe</button>
+    </form>
+  </div>
+</div>
