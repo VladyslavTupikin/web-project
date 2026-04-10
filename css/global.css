@@ -1,0 +1,124 @@
+/* Reset default browser settings */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*outline: 1px solid red;*/
+}
+
+:root {
+  --container-width: 1200px;
+
+  --body-bg-color: rgb(255, 255, 255);
+  --button-hover-menu: rgba(0, 0, 0, 0.5);
+  --generic-button-color: rgb(32, 145, 249);
+  --generic-button-text-color: rgb(255, 255, 255);
+  --generic-button-hover: rgba(255, 255, 255, 0.15);
+  --generic-button-active: rgba(0, 0, 0, 0.5);
+
+  --hero-mobile-font: "Inter", sans-serif;
+  --hero-mobile-title-font-size: 2rem;
+  --hero-mobile-subtitle-font-size: 1.5rem;
+  --hero-mobile-subtitle-margin: 50px;
+  --hero-mobile-line-height: 1.2;
+  --hero-mobile-letter-spacing: -0.5px;
+  --hero-mobile-font-weight: 500;
+
+  --hero-desktop-font: "Inter", sans-serif;
+  --hero-desktop-title-font-size: 3rem;
+  --hero-desktop-subtitle-font-size: 2rem;
+  --hero-desktop-subtitle-margin: 50px;
+  --hero-desktop-line-height: 1.2;
+  --hero-desktop-letter-spacing: -0.5px;
+  --hero-desktop-font-weight: 600;
+  --hero-desktop-subtitle-font-weight: 500;
+  --hero-text-color: rgb(255, 255, 255);
+
+  --global-mobile-font: var(--hero-mobile-font);
+  --global-mobile-font-color: rgb(0, 0, 0);
+  --global-mobile-font-title-size: var(--hero-mobile-title-font-size);
+  --global-mobile-font-subtitle-size: var(--hero-mobile-subtitle-font-size);
+  --global-mobile-subtitle-margin: var(--hero-mobile-subtitle-margin);
+  --global-mobile-subtitle-padding: 20px;
+  --global-mobile-font-text-size: 1rem;
+  --global-mobile-font-weight: var(--hero-mobile-font-weight);
+
+  --global-menu-font-family: "Inter", sans-serif;
+  --global-menu-font-size: 1rem;
+  --global-menu-font-color: rgb(255, 255, 255);
+  --global-menu-hover-color: rgba(255, 255, 255, 0.15);
+  --global-menu-active-color: rgba(0, 0, 0, 0.5);
+
+  scroll-behavior: smooth;
+}
+
+/* Default body configuration */
+body {
+  background-color: var(--body-bg-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--hero-mobile-font);
+  text-decoration: none;
+  background: var(--generic-button-color);
+  color: var(--generic-button-text-color);
+  width: 290px;
+  height: 65px;
+  font-size: 24px;
+  border-radius: 50px;
+}
+
+.button:active {
+  background: var(--generic-button-active);
+}
+
+.button-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--hero-mobile-font);
+  text-decoration: none;
+  background: var(--generic-button-color);
+  color: var(--generic-button-text-color);
+  width: 65px;
+  height: 65px;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.button-play:active {
+  background: var(--generic-button-active);
+}
+
+/* Trianle play icon */
+.button-play__icon {
+  width: 0;
+  height: 0;
+
+  border-left: 14px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+
+  margin-left: 4px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+html {
+  font-size: 16px;
+}

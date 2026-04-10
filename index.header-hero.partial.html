@@ -1,72 +1,50 @@
 <header class="header">
-  <nav
-    data-hx-trigger="load"
-    data-hx-swap="outerHTML"
-    data-hx-get="global.header-nav.partial.html"
-  ></nav>
-
-  <div class="header__top">
-    <div class="header__logo">
-      <a href="index.html" class="header__logo-link"
-        ><img
-          class="header__logo-img"
-          src="img/figma-title.png"
-          alt="Figma title"
-        />
-      </a>
-    </div>
-
-    <div class="header__socials">
-      <ul class="header__social-list">
-        <li class="header__social-item">
-          <a href="#" class="header__social-link">
-            <img
-              class="header__social-icon"
-              src="img/icons/social-twitter.svg"
-              alt="Twitter"
-            />
-          </a>
-        </li>
-        <li class="header__social-item">
-          <a href="#" class="header__social-link">
-            <img
-              class="header__social-icon"
-              src="img/icons/social-fbook.svg"
-              alt="Facebook"
-            />
-          </a>
-        </li>
-        <li class="header__social-item">
-          <a href="#" class="header__social-link">
-            <img
-              class="header__social-icon"
-              src="img/icons/social-linkedin.svg"
-              alt="Linkedin"
-            />
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
   <div class="header__hero">
-    <img
-      class="header__background"
-      width="1775"
-      height="930"
-      src="img/header-background.jpg"
-      alt=""
-    />
+    <div class="hero__bg"></div>
+    <div class="container">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="index.html" class="header__logo-link"
+            ><img
+              class="header__logo-img"
+              src="img/figma-title.png"
+              alt="Figma title"
+            />
+          </a>
+        </div>
+
+        <button class="header__button-menu" aria-label="open menu">
+          <img
+            class="header__icon-img"
+            src="img/icons/mobile-menu.svg"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
 
     <div class="header__intro">
       <h1 class="header__title">The best products starts with Figma</h1>
-      <p class="header__text">
-        Most calendars are designed for items. Slate is designed for freelancers
-      </p>
+      <div class="header__text">
+        <p class="header__text-item">
+          Most calendars are designed for teams.
+          <span class="header__text-item2">
+            Slate is designed for freelancers
+          </span>
+        </p>
+      </div>
     </div>
 
     <div class="header__actions">
-      <a href="#" class="button button--primary">Try for free</a>
+      <a href="#" class="button button--primary">
+        <span class="header__actions-mobile">Try For</span>
+        <span class="header__actions-desktop">Try For Free</span>
+      </a>
     </div>
   </div>
 </header>
