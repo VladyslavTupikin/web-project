@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*outline: 1px solid red;*/
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -45,6 +45,16 @@
   --global-mobile-font-text-size: 1rem;
   --global-mobile-font-weight: var(--hero-mobile-font-weight);
 
+  --global-desktop-font: var(--hero-desktop-font);
+  --global-desktop-font-color: rgb(0, 0, 0);
+  --global-desktop-font-title-size: var(--hero-desktop-title-font-size);
+  --global-desktop-font-subtitle-size: var(--hero-desktop-subtitle-font-size);
+  --global-desktop-subtitle-margin: var(--hero-desktop-subtitle-margin);
+  --global-desktop-subtitle-padding: 20px;
+  --global-desktop-font-text-size: 1rem;
+  --global-desktop-font-weight: var(--hero-desktop-font-weight);
+  --global-desktop-margin: 20rem;
+
   --global-menu-font-family: "Inter", sans-serif;
   --global-menu-font-size: 1rem;
   --global-menu-font-color: rgb(255, 255, 255);
@@ -52,6 +62,7 @@
   --global-menu-active-color: rgba(0, 0, 0, 0.5);
 
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 /* Default body configuration */
@@ -117,8 +128,4 @@ img {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 16px;
-}
-
-html {
-  font-size: 16px;
 }

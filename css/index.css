@@ -1,4 +1,8 @@
 /* Imports */
 
 @import "global.css";
-@import "index.header-hero.partial.css";
+@import "./index/header-hero.css";
+@import "./index/features.css";
+@import "./index/organize.css";
+@import url("./index/newslatter.css");
+@import "global.header-nav.partial.css";

@@ -1,9 +1,28 @@
-<div class="features">
+<div class="features container">
   <div class="features__intro">
     <h2 class="features__intro-title">Features</h2>
-    <p class="features__intro-text">
-      Most calendars are designed for items. Slate is designed for freelancers
-    </p>
+    <div class="features__text">
+      <p class="features__text-item">
+        Most calendars are designed for items.
+        <span class="features__text-item2">
+          Slate is designed for freelancers
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <div class="features__video-mobile">
+    <div class="features__video-mobile-wrapper">
+      <img
+        class="features__video-mobile-img"
+        src="img/video-preview-mobile.png"
+        alt="Preview image"
+      />
+
+      <button class="features__video-mobile-play button-play button--primary">
+        <span class="button-play__icon"></span>
+      </button>
+    </div>
   </div>
 
   <div class="features__container">
@@ -52,12 +71,14 @@
   <div class="features__video">
     <img
       class="features__video-img"
-      width="1775"
-      height="930"
       src="img/video-preview.jpg"
       alt="Preview image"
     />
 
-    <button class="button button--primary">Play</button>
+    <button
+      class="button-play features__video-play-desktop features__video-play"
+    >
+      <span class="button-play__icon"></span>
+    </button>
   </div>
 </div>

@@ -1,29 +1,44 @@
-<div class="newslatter">
-  <div class="newslatter__picture">
-    <img
-      class="newslatter__picture-img"
-      src="img/newslatter.png"
-      alt="Newslatter picture on the newslatter page"
-    />
-  </div>
-
-  <div class="newslatter__intro">
-    <p class="newslatter__intro-text">At your fingertips</p>
-    <h2 class="newslatter__intro-title">Lightning fast prototyping</h2>
-  </div>
-
+<div class="newslatter container">
   <div class="newslatter__container">
-    <form class="newslatter__form" action="https://example.com">
-      <h3 class="newslatter__form-title">Subscribe to our Newslatter</h3>
-      <p class="newslatter__form-text">Available exclusively on Figmaland</p>
+    <div class="newslatter__intro">
+      <p class="newslatter__intro-text">At your fingertips</p>
+      <h2 class="newslatter__intro-title">Newsletter</h2>
+      <p class="newslatter__intro-subtitle">
+        Most calendars are designed for items.
+        <span class="newslatter__text-item2">
+          Slate is designed for freelancers
+        </span>
+      </p>
 
-      <input
-        class="newslatter__form-input"
-        type="text"
-        placeholder="Your Email"
-        required
-      />
-      <button class="newslatter__form-button">Subscribe</button>
-    </form>
+      <div class="newslatter__picture">
+        <img
+          class="newslatter__picture-img"
+          src="img/newslatter.png"
+          alt="Newslatter picture on the newslatter page"
+        />
+      </div>
+
+      <h2 class="newslatter__intro-title-desktop">
+        Lightning fast prototyping
+      </h2>
+    </div>
+
+    <div class="newslatter__form-wrapper">
+      <form class="newslatter__form" action="https://example.com">
+        <h3 class="newslatter__form-title">Subscribe to our Newslatter</h3>
+        <p class="newslatter__form-text">Available exclusively on Figmaland</p>
+
+        <input
+          class="newslatter__form-input"
+          type="text"
+          placeholder="Your Email"
+          required
+        />
+
+        <button class="newslatter__form-button button button--primary">
+          Subscribe
+        </button>
+      </form>
+    </div>
   </div>
 </div>

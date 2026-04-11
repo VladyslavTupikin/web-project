@@ -1,0 +1,96 @@
+.newslatter {
+  position: relative;
+
+  .newslatter__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    .newslatter__intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      .newslatter__intro-text {
+        margin-top: var(--global-mobile-subtitle-margin);
+        font-family: var(--global-mobile-font);
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--global-mobile-font-color);
+        text-align: center;
+        max-width: 18ch;
+      }
+
+      .newslatter__intro-title {
+        font-family: var(--global-mobile-font);
+        font-size: var(--global-mobile-font-title-size);
+        color: var(--global-mobile-font-color);
+        text-align: center;
+        padding: var(--global-mobile-subtitle-padding);
+      }
+
+      .newslatter__intro-title-desktop {
+        display: none;
+      }
+
+      .newslatter__intro-subtitle {
+        font-family: var(--global-mobile-font);
+        font-size: var(--global-mobile-font-subtitle-size);
+        color: var(--global-mobile-font-color);
+        text-align: center;
+        max-width: 18ch;
+        padding: var(--global-mobile-subtitle-padding);
+
+        .newslatter__text-item2 {
+          padding-top: 15px;
+        }
+      }
+    }
+  }
+
+  .newslatter__form-wrapper {
+    margin-top: var(--global-mobile-subtitle-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    .newslatter__form-title,
+    .newslatter__form-text {
+      font-family: var(--global-mobile-font);
+      font-size: 1rem;
+      color: var(--global-mobile-font-color);
+      text-align: center;
+      text-decoration: solid;
+    }
+
+    .newslatter__form-input {
+      font-family: var(--global-mobile-font);
+      font-size: 1rem;
+
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border: 3px solid #ccc;
+      width: 100%;
+      height: 45px;
+
+      border-radius: 50px;
+    }
+
+    .newslatter__form-input::placeholder {
+      font-family: var(--global-mobile-font);
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .newslatter__form-button {
+      height: 45px;
+      font-size: 1rem;
+    }
+  }
+}
