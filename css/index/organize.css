@@ -6,10 +6,19 @@
     position: relative;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
     gap: 12px;
 
     .organize__intro {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      gap: 12px;
+
       .organize__intro-title {
         font-family: var(--global-mobile-font);
         font-size: var(--global-mobile-font-title-size);

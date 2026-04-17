@@ -4,5 +4,8 @@
 @import "./index/header-hero.css";
 @import "./index/features.css";
 @import "./index/organize.css";
-@import url("./index/newslatter.css");
+@import "./index/newslatter.css";
+@import "./index/footer.css";
+@import "./index/pricing.css";
+
 @import "global.header-nav.partial.css";

@@ -8,6 +8,10 @@
     justify-content: center;
     gap: 12px;
 
+    .newslatter__picture-desktop {
+      display: none;
+    }
+
     .newslatter__intro {
       display: flex;
       flex-direction: column;
@@ -30,7 +34,7 @@
         font-size: var(--global-mobile-font-title-size);
         color: var(--global-mobile-font-color);
         text-align: center;
-        padding: var(--global-mobile-subtitle-padding);
+        padding-top: 1rem;
       }
 
       .newslatter__intro-title-desktop {
@@ -91,6 +95,84 @@
     .newslatter__form-button {
       height: 45px;
       font-size: 1rem;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .newslatter__container {
+      margin-top: var(--global-desktop-margin);
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 12px;
+
+      .newslatter__picture-desktop {
+        display: block;
+        margin-right: 5%;
+      }
+
+      .newslatter__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 12px;
+
+        .newslatter__intro-text {
+          text-align: left;
+        }
+        .newslatter__intro-title-desktop {
+          display: block;
+          font-family: var(--hero-desktop-font);
+          font-size: var(--global-desktop-font-title-size);
+          font-weight: var(--global-desktop-font-weight);
+          color: var(--global-desktop-font-color);
+          text-align: left;
+        }
+
+        .newslatter__form-wrapper {
+          margin-top: 1rem;
+          .newslatter__form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 12px;
+
+            .newslatter__form-title,
+            .newslatter__form-text {
+              font-family: var(--global-mobile-font);
+              font-size: 1rem;
+              color: var(--global-mobile-font-color);
+              text-align: left;
+              text-decoration: solid;
+            }
+
+            .newslatter__input-container {
+              width: 165%;
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 12px;
+
+              .newslatter__form-button {
+                width: 50%;
+                margin-top: 20px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+
+        .newslatter__picture,
+        .newslatter__intro-title,
+        .newslatter__intro-subtitle {
+          display: none;
+        }
+      }
     }
   }
 }
