@@ -4,6 +4,7 @@
     position: relative;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
     gap: 12px;
 
@@ -62,11 +63,14 @@
 
       display: grid;
       gap: 2rem;
+      justify-self: center;
 
       .features__item {
+        justify-self: center;
         .features__item-icon {
           display: block;
           margin: 0 auto;
+          justify-self: center;
         }
 
         .features__item-title {
@@ -75,6 +79,7 @@
           text-align: center;
           text-decoration: solid;
           max-width: 18ch;
+          justify-self: center;
         }
         .features__item-text {
           padding-top: 2rem;
@@ -82,6 +87,7 @@
           font-family: var(--global-mobile-font);
           text-align: center;
           max-width: 18ch;
+          justify-self: center;
         }
       }
     }
@@ -100,12 +106,14 @@
 
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      justify-self: center;
       gap: 2rem;
 
       .features__item {
         .features__item-icon {
           display: block;
           margin: 0 auto;
+          justify-self: center;
         }
       }
     }
