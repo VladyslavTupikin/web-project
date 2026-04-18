@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -19,7 +19,7 @@
   --generic-button-active: rgba(0, 0, 0, 0.5);
 
   --hero-mobile-font: "Inter", sans-serif;
-  --hero-mobile-title-font-size: 2rem;
+  --hero-mobile-title-font-size: 3rem;
   --hero-mobile-subtitle-font-size: 1.5rem;
   --hero-mobile-subtitle-margin: 50px;
   --hero-mobile-line-height: 1.2;

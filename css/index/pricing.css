@@ -73,7 +73,7 @@
           }
 
           .pricing__list-data {
-            padding-bottom: 50px;
+            padding-bottom: 20px;
             list-style: none;
 
             .pricing__item {
@@ -88,6 +88,7 @@
             width: 200px;
             height: 55px;
             margin-bottom: 2rem;
+            transform: scale(0.8);
           }
         }
       }
@@ -113,6 +114,7 @@
           .button {
             background: var(--pricing-common-bg-color);
             color: var(--pricing-advanced-bg-color);
+            transform: scale(0.8);
           }
         }
       }

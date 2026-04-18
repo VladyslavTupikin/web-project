@@ -1,96 +1,139 @@
 <section class="contacts container">
-  <div class="contacts__intro">
-    <h2 class="contacts__title">Contact Us</h2>
-    <p class="contacts__text">
-      Most calendars are designed for items. Slate is designed for freelancers
-    </p>
-  </div>
+  <div class="contacts__container">
+    <div class="contacts__intro">
+      <h2 class="contacts__title">Contact Us</h2>
+      <p class="contacts__text">
+        Most calendars are designed for items.
+        <span class="contacts__text-item2">
+          Slate is designed for freelancers</span
+        >
+      </p>
+    </div>
 
-  <div class="contacts__form-wrapper">
-    <form class="contacts__form" action="https://example.com">
-      <input
-        class="contacts__input"
-        name="name"
-        type="text"
-        placeholder="Your name"
-      />
-      <input
-        class="contacts__input"
-        name="email"
-        type="email"
-        placeholder="Your email"
-      />
-      <textarea
-        class="contacts__textarea"
-        name="message"
-        placeholder="Your text"
-      ></textarea>
-      <button class="contacts__button">Send message</button>
-    </form>
-  </div>
+    <div class="contacts__social">
+      <ul class="contacts__social-list">
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link" aria-label="Twitter">
+            <img
+              class="contacts__social-icon"
+              src="img/icons/twitter-blue.svg"
+              alt=""
+            />
+          </a>
+        </li>
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link" aria-label="Facebook">
+            <img
+              class="contacts__social-icon"
+              src="img/icons/fbook-blue.svg"
+              alt=""
+            />
+          </a>
+        </li>
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link" aria-label="Linkedin">
+            <img
+              class="contacts__social-icon"
+              src="img/icons/linkedin-blue.svg"
+              alt=""
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="contacts__info">
-    <ul class="contacts__list">
-      <li class="contacts__item">
-        <img class="contacts__icon" src="img/icons/map-blue.svg" alt="Map" />
-        <address class="contacts__address">
-          6386 Spring St undefined Anchorage, Georgia 12473 United States
-        </address>
-      </li>
-      <li class="contacts__item">
-        <img
-          class="contacts__icon"
-          src="img/icons/phone-android-blue.svg"
-          alt="Phone"
+    <div class="contacts__form-wrapper">
+      <form class="contacts__form" action="https://example.com">
+        <p class="contacts__form-title">Contact us</p>
+
+        <input
+          class="contacts__input"
+          name="name"
+          type="text"
+          placeholder="Your name"
         />
-        <a href="tel:8435550130" class="contacts__number">(843) 555-0130</a>
-      </li>
-      <li class="contacts__item">
-        <img class="contacts__icon" src="img/icons/mail-blue.svg" alt="Mail" />
-        <a href="mailto:willie.jennings@example.com" class="contacts__email">
-          willie.jennings@example.com
-        </a>
-      </li>
-    </ul>
-  </div>
+        <input
+          class="contacts__input"
+          name="email"
+          type="email"
+          placeholder="Your email"
+        />
+        <textarea
+          class="contacts__textarea"
+          name="message"
+          placeholder="Your text"
+        ></textarea>
+        <button class="contacts__button button">Send message</button>
+      </form>
+    </div>
 
-  <div class="contacts__map">
-    <img
-      class="contacts__map-img"
-      src="img/map.png"
-      alt="Map showing company location"
-    />
-  </div>
+    <div class="contacts__info">
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <img class="contacts__icon" src="img/icons/map-blue.svg" alt="Map" />
+          <address class="contacts__address">
+            6386 Spring St undefined Anchorage, Georgia 12473 United States
+          </address>
+        </li>
+        <li class="contacts__item">
+          <img
+            class="contacts__icon"
+            src="img/icons/phone-android-blue.svg"
+            alt="Phone"
+          />
+          <a href="tel:8435550130" class="contacts__number">(843) 555-0130</a>
+        </li>
+        <li class="contacts__item">
+          <img
+            class="contacts__icon"
+            src="img/icons/mail-blue.svg"
+            alt="Mail"
+          />
+          <a href="mailto:willie.jennings@example.com" class="contacts__email">
+            willie.jennings@example.com
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="contacts__social">
-    <ul class="contacts__social-list">
-      <li class="contacts__social-item">
-        <a href="#" class="contacts__social-link" aria-label="Twitter">
-          <img
-            class="contacts__social-icon"
-            src="img/icons/twitter-blue.svg"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="contacts__social-item">
-        <a href="#" class="contacts__social-link" aria-label="Facebook">
-          <img
-            class="contacts__social-icon"
-            src="img/icons/fbook-blue.svg"
-            alt=""
-          />
-        </a>
-      </li>
-      <li class="contacts__social-item">
-        <a href="#" class="contacts__social-link" aria-label="Linkedin">
-          <img
-            class="contacts__social-icon"
-            src="img/icons/linkedin-blue.svg"
-            alt=""
-          />
-        </a>
-      </li>
-    </ul>
+    <div class="contacts__map">
+      <img
+        class="contacts__map-img"
+        src="img/map.png"
+        alt="Map showing company location"
+      />
+    </div>
+
+    <div class="contacts__social-desktop">
+      <ul class="contacts__social-list">
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link" aria-label="Twitter">
+            <img
+              class="contacts__social-icon"
+              src="img/icons/twitter-blue.svg"
+              alt=""
+            />
+          </a>
+        </li>
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link" aria-label="Facebook">
+            <img
+              class="contacts__social-icon"
+              src="img/icons/fbook-blue.svg"
+              alt=""
+            />
+          </a>
+        </li>
+        <li class="contacts__social-item">
+          <a href="#" class="contacts__social-link" aria-label="Linkedin">
+            <img
+              class="contacts__social-icon"
+              src="img/icons/linkedin-blue.svg"
+              alt=""
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>

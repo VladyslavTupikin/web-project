@@ -1,0 +1,95 @@
+.contacts {
+  position: relative;
+
+  .contacts__container {
+    .contacts__intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      .contacts__title {
+        font-family: var(--global-mobile-font);
+        font-size: var(--global-mobile-font-title-size);
+        color: var(--global-mobile-font-color);
+        text-align: center;
+        margin-top: var(--global-mobile-subtitle-margin);
+      }
+
+      .contacts__text {
+        font-family: var(--global-mobile-font);
+        font-size: var(--global-mobile-font-subtitle-size);
+        color: var(--global-mobile-font-color);
+        text-align: center;
+        max-width: 18ch;
+        padding: var(--global-mobile-subtitle-padding);
+      }
+
+      .contacts__text-item2 {
+        display: none;
+      }
+    }
+
+    .contacts__social {
+      .contacts__social-list {
+        list-style: none;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .contacts__social-item {
+          display: block;
+        }
+      }
+    }
+
+    .contacts__social-desktop {
+      display: none;
+    }
+
+    .contacts__form-wrapper {
+      .contacts__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        .contacts__form-title {
+          font-family: var(--global-mobile-font);
+          font-size: 1rem;
+          color: var(--global-mobile-font-color);
+          text-align: center;
+          font-weight: 700;
+          padding: 20px;
+        }
+
+        .contacts__input {
+          width: 80%;
+          height: 3rem;
+          border: 1px solid;
+          border-color: rgb(45, 45, 45);
+          border-radius: 20px;
+          padding: 20px;
+        }
+
+        .contacts__textarea {
+          width: 80%;
+          height: 8rem;
+          border: 1px solid;
+          border-color: rgb(45, 45, 45);
+          padding: 20px;
+        }
+
+        .contacts__button {
+          transform: scale(0.7);
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
