@@ -36,6 +36,16 @@
   --hero-desktop-subtitle-font-weight: 500;
   --hero-text-color: rgb(255, 255, 255);
 
+  --pricing-box-max-width: 300px;
+  --pricing-font-color: rgb(255, 255, 255);
+  --pricing-font-size: 1rem;
+  --pricing-title-font-weight: 700;
+  --pricing-common-bg-color: rgb(255, 255, 255);
+  --pricing-common-font-color: rgb(0, 0, 0);
+
+  --pricing-advanced-bg-color: rgb(32, 145, 249);
+  --pricing-advanced-font-color: rgb(255, 255, 255);
+
   --global-mobile-font: var(--hero-mobile-font);
   --global-mobile-font-color: rgb(0, 0, 0);
   --global-mobile-font-title-size: var(--hero-mobile-title-font-size);
