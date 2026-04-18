@@ -1,0 +1,106 @@
+.testimonials {
+  position: relative;
+
+  .testimonials__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    .testimonials__title {
+      font-family: var(--global-mobile-font);
+      font-size: var(--global-mobile-font-title-size);
+      color: var(--global-mobile-font-color);
+      text-align: center;
+      margin-top: var(--global-mobile-subtitle-margin);
+    }
+
+    .testimonials__card {
+      .testimonials__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        .testimonials__text {
+          font-family: var(--global-mobile-font);
+          font-size: 0.7rem;
+          font-weight: 700;
+          color: var(--global-mobile-font-color);
+          text-align: center;
+          max-width: 35ch;
+          padding: var(--global-mobile-subtitle-padding);
+        }
+      }
+
+      .testimonials__logo-wrapper {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .testimonials__author {
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        .testimonials__title {
+          font-family: var(--global-mobile-font);
+          font-size: 0.7rem;
+          font-weight: 700;
+          color: var(--global-mobile-font-color);
+        }
+
+        .testimonials__author-role {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          font-family: var(--global-mobile-font);
+          font-size: 1rem;
+          color: var(--global-mobile-font-color);
+        }
+      }
+
+      .testimonials__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .testimonials__container {
+      margin-top: var(--global-desktop-margin);
+
+      .testimonials__title {
+        font-family: var(--hero-desktop-font);
+        font-size: var(--global-desktop-font-title-size);
+        font-weight: var(--global-desktop-font-weight);
+        color: var(--global-desktop-font-color);
+        text-align: center;
+        padding: 0%;
+      }
+
+      .testimonials__card {
+        .testimonials__text-wrapper {
+          .testimonials__text {
+            font-size: var(--global-desktop-font-subtitle-size);
+            font-weight: 500;
+            max-width: 60ch;
+          }
+        }
+      }
+    }
+  }
+}
