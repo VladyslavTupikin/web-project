@@ -1,3 +1,166 @@
 .footer {
+  position: relative;
   background-color: rgb(37, 43, 66);
+  min-height: 30vh;
+
+  .container {
+    padding-top: 5%;
+    .footer__columns-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+
+      /* Disable footer menu in mobile version */
+      .footer__columns-item:nth-child(1) {
+        display: none;
+      }
+
+      /* Make padding 50px for the title in mobile ver */
+      .footer__columns-item:nth-child(2) {
+        .footer__title {
+          padding-top: 50px;
+        }
+      }
+
+      .footer__columns-item {
+        .footer__title {
+          padding-bottom: 15px;
+
+          justify-self: center;
+          font-family: var(--global-mobile-font);
+          color: var(--footer-font-color);
+        }
+
+        .footer__list {
+          margin-bottom: 50px;
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+
+          .footer__item {
+            font-family: var(--global-mobile-font);
+            color: var(--footer-font-color);
+          }
+        }
+
+        .footer__contact-list {
+          list-style: none;
+          margin-left: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+
+          .footer__contact-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            font-family: var(--global-mobile-font);
+            color: var(--footer-font-color);
+          }
+
+          .footer__address,
+          .footer__phone {
+            font-family: var(--global-mobile-font);
+            font-size: 0.9rem;
+          }
+
+          .footer__address {
+            font-style: normal;
+          }
+
+          .footer__phone {
+            text-decoration: none;
+            color: var(--footer-font-color);
+            white-space: nowrap;
+          }
+
+          .footer__phone:active {
+            color: var(--generic-button-color);
+          }
+
+          .footer__icon {
+            width: 100%;
+          }
+
+          .footer__icon:nth-child(1) {
+            width: 30px;
+            height: 30px;
+          }
+
+          .footer__icon:nth-child(2) {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .footer__socials {
+          .footer__social-list {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .footer__container {
+      position: relative;
+
+      .footer__columns-list {
+        grid-template-columns: repeat(4, 1fr);
+
+        .footer__columns-item:nth-child(1) {
+          display: block;
+
+          .footer__nav-wrapper {
+            .footer__nav {
+              .footer__menu {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+
+                .footer__menu-item {
+                  .footer__menu-link {
+                    font-family: var(--hero-desktop-font);
+                    text-decoration: none;
+                    color: var(--footer-font-color);
+                  }
+                  .footer__menu-link:hover {
+                    text-decoration: underline;
+                    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+                  }
+
+                  .footer__menu-link:active {
+                    color: var(--generic-button-color);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .footer__columns-item:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
 }

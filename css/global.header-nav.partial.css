@@ -45,11 +45,14 @@
               font-size: var(--global-menu-font-size);
               color: var(--global-menu-font-color);
             }
+
             .header__menu-link:hover {
-              background: var(--global-menu-hover-color);
+              text-decoration: underline;
+              text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
             }
+
             .header__menu-link:active {
-              background: var(--global-menu-active-color);
+              color: var(--generic-button-color);
             }
           }
 
@@ -78,6 +81,7 @@
         }
       }
     }
+
     .header__socials {
       .header__social-list {
         display: none;
@@ -100,6 +104,7 @@
         .header__social-item:hover {
           background: var(--global-menu-hover-color);
         }
+
         .header__social-item:active {
           background: var(--global-menu-active-color);
         }

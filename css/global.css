@@ -46,6 +46,8 @@
   --pricing-advanced-bg-color: rgb(32, 145, 249);
   --pricing-advanced-font-color: rgb(255, 255, 255);
 
+  --footer-font-color: rgb(255, 255, 255);
+
   --global-mobile-font: var(--hero-mobile-font);
   --global-mobile-font-color: rgb(0, 0, 0);
   --global-mobile-font-title-size: var(--hero-mobile-title-font-size);
