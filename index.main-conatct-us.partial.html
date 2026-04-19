@@ -42,31 +42,6 @@
       </ul>
     </div>
 
-    <div class="contacts__form-wrapper">
-      <form class="contacts__form" action="https://example.com">
-        <p class="contacts__form-title">Contact us</p>
-
-        <input
-          class="contacts__input"
-          name="name"
-          type="text"
-          placeholder="Your name"
-        />
-        <input
-          class="contacts__input"
-          name="email"
-          type="email"
-          placeholder="Your email"
-        />
-        <textarea
-          class="contacts__textarea"
-          name="message"
-          placeholder="Your text"
-        ></textarea>
-        <button class="contacts__button button">Send message</button>
-      </form>
-    </div>
-
     <div class="contacts__info">
       <ul class="contacts__list">
         <li class="contacts__item">
@@ -96,7 +71,63 @@
       </ul>
     </div>
 
-    <div class="contacts__map">
+    <div class="contacts__form-wrapper">
+      <form class="contacts__form" action="https://example.com">
+        <p class="contacts__form-title">Contact us</p>
+
+        <input
+          class="contacts__input"
+          name="name"
+          type="text"
+          placeholder="Your name"
+          required
+        />
+        <input
+          class="contacts__input"
+          name="email"
+          type="email"
+          placeholder="Your email"
+          required
+        />
+        <textarea
+          class="contacts__textarea"
+          name="message"
+          placeholder="Your text"
+        ></textarea>
+        <button class="contacts__button button">Send message</button>
+      </form>
+    </div>
+
+    <div class="contacts__info-desktop">
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <img class="contacts__icon" src="img/icons/map-blue.svg" alt="Map" />
+          <address class="contacts__address">
+            6386 Spring St undefined Anchorage, Georgia 12473 United States
+          </address>
+        </li>
+        <li class="contacts__item">
+          <img
+            class="contacts__icon"
+            src="img/icons/phone-android-blue.svg"
+            alt="Phone"
+          />
+          <a href="tel:8435550130" class="contacts__number">(843) 555-0130</a>
+        </li>
+        <li class="contacts__item">
+          <img
+            class="contacts__icon"
+            src="img/icons/mail-blue.svg"
+            alt="Mail"
+          />
+          <a href="mailto:willie.jennings@example.com" class="contacts__email">
+            willie.jennings@example.com
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contacts__map-desktop">
       <img
         class="contacts__map-img"
         src="img/map.png"

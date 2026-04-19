@@ -47,8 +47,44 @@
       }
     }
 
-    .contacts__social-desktop {
-      display: none;
+    .contacts__info {
+      .contacts__list {
+        list-style: none;
+        padding: 0, 0, 20px, 20px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 12px;
+
+        .contacts__item {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+
+          .contacts__address,
+          .contacts__number,
+          .contacts__email {
+            font-family: var(--global-mobile-font);
+            font-size: 1rem;
+            font-style: normal;
+            color: var(--global-mobile-font-color);
+          }
+          .contacts__number,
+          .contacts__email {
+            text-decoration: none;
+          }
+
+          .contacts__number:active,
+          .contacts__email:active {
+            color: var(--generic-button-color);
+          }
+        }
+      }
     }
 
     .contacts__form-wrapper {
@@ -58,6 +94,14 @@
         align-items: center;
         justify-content: center;
         gap: 12px;
+        margin-bottom: 2rem;
+
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(229, 229, 229);
+        border-radius: 16px;
+        box-shadow:
+          0 10px 30px rgba(0, 0, 0, 0.08),
+          0 4px 12px rgba(0, 0, 0, 0.05);
 
         .contacts__form-title {
           font-family: var(--global-mobile-font);
@@ -72,6 +116,7 @@
           width: 80%;
           height: 3rem;
           border: 1px solid;
+          background-color: rgba(0, 0, 0, 0.05);
           border-color: rgb(45, 45, 45);
           border-radius: 20px;
           padding: 20px;
@@ -80,9 +125,14 @@
         .contacts__textarea {
           width: 80%;
           height: 8rem;
+          background-color: rgba(0, 0, 0, 0.05);
           border: 1px solid;
           border-color: rgb(45, 45, 45);
           padding: 20px;
+        }
+        .contacts__input::placeholder,
+        .contacts__textarea::placeholder {
+          color: var(--global-mobile-font-color);
         }
 
         .contacts__button {
@@ -90,6 +140,12 @@
           margin-bottom: 25px;
         }
       }
+    }
+
+    .contacts__social-desktop,
+    .contacts__info-desktop,
+    .contacts__map-desktop {
+      display: none;
     }
   }
 }
