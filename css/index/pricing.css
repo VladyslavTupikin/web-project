@@ -18,6 +18,7 @@
         font-size: var(--global-mobile-font-title-size);
         color: var(--pricing-font-color);
         text-align: center;
+        padding-bottom: 2rem;
       }
 
       .pricing__intro-text {
@@ -26,7 +27,6 @@
         color: var(--pricing-font-color);
         text-align: center;
         max-width: 18ch;
-        padding: var(--global-mobile-subtitle-padding);
       }
 
       .pricing__intro-item2 {
@@ -56,6 +56,34 @@
           border-radius: 3%;
           margin: 20px;
           max-width: var(--pricing-box-max-width);
+
+          .pricing__price {
+            font-family: "Inter", sans-serif;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+
+            .pricing__number {
+              font-size: 3.5rem;
+              font-weight: 900;
+            }
+
+            .pricing__curr {
+              font-size: 1.5rem;
+              font-weight: 900;
+            }
+
+            .pricing__data {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 2px;
+            }
+          }
 
           .pricing__card-title {
             padding-top: 20px;
@@ -124,6 +152,14 @@
 
   @media (min-width: 1024px) {
     .pricing__container {
+      .pricing__intro {
+        .pricing__intro-text {
+          max-width: 35ch;
+          .pricing__intro-item2 {
+            display: inline;
+          }
+        }
+      }
       .pricing__list-cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
