@@ -35,7 +35,7 @@
         max-width: 18ch;
         padding: var(--global-mobile-subtitle-padding);
 
-        .features__text-item2 {
+        .organize__text-item2 {
           display: none;
         }
       }
@@ -75,6 +75,11 @@
           text-align: left;
           padding-left: 0;
           max-width: 50ch;
+          font-size: var(--global-desktop-font-subtitle-size);
+
+          .organize__text-item2 {
+            display: inline;
+          }
         }
 
         .organize__actions {

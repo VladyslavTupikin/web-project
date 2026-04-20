@@ -50,7 +50,7 @@
         padding: var(--global-mobile-subtitle-padding);
 
         .newslatter__text-item2 {
-          padding-top: 15px;
+          display: none;
         }
       }
     }
@@ -129,6 +129,11 @@
           font-weight: var(--global-desktop-font-weight);
           color: var(--global-desktop-font-color);
           text-align: left;
+        }
+
+        .newslatter__text-item2 {
+          display: inline;
+          padding-top: 15px;
         }
 
         .newslatter__form-wrapper {

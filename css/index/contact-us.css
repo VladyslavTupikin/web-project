@@ -155,8 +155,10 @@
       .contacts__intro {
         .contacts__text {
           max-width: 35ch;
+          font-size: var(--global-desktop-font-subtitle-size);
           .contacts__text-item2 {
             display: inline;
+            padding: var(--global-mobile-subtitle-padding);
           }
         }
       }

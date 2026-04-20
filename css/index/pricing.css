@@ -155,6 +155,7 @@
       .pricing__intro {
         .pricing__intro-text {
           max-width: 35ch;
+          font-size: var(--global-desktop-font-subtitle-size);
           .pricing__intro-item2 {
             display: inline;
           }
@@ -167,16 +168,3 @@
     }
   }
 }
-
-/*
-@media (min-width: 1024px) {
-  .pricing__container {
-    .pricing__list-container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-    }
-  }
-} */
