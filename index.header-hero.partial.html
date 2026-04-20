@@ -1,34 +1,51 @@
 <header class="header">
-  <div class="header__hero">
-    <div class="hero__bg"></div>
-    <div class="container">
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
-      <div class="header__top">
-        <div class="header__logo">
-          <a href="index.html" class="header__logo-link"
-            ><img
-              class="header__logo-img"
-              src="img/figma-title.png"
-              alt="Figma title"
-            />
-          </a>
-        </div>
+  <div class="header__hero container">
+    <!-- <div class="hero__bg"></div> -->
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.header-nav-desktp.partial.html"
+    ></div>
 
-        <button class="header__button-menu" aria-label="open menu">
-          <img
-            class="header__icon-img"
-            src="img/icons/mobile-menu.svg"
-            alt=""
-          />
-        </button>
+    <div class="header__top">
+      <div class="header__logo">
+        ><img
+          class="header__logo-img"
+          src="img/figma-title.png"
+          alt="Figma title"
+        />
       </div>
+
+      <!-- <a href="index.html" class="header__logo">LOGO</a> -->
+
+      <button class="header__burger" aria-label="Toggle menu">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="index.html" class="header__menu-link">Home</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#product" class="header__menu-link">Product</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#price" class="header__menu-link">Pricing</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#about" class="header__menu-link">About</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#contact-us" class="header__menu-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-    <div class="header__intro">
+    <div class="header__intro container">
       <h1 class="header__title">The best products starts with Figma</h1>
       <div class="header__text">
         <p class="header__text-item">
